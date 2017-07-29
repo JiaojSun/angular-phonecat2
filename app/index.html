@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" ng-app="phonecatApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Google Phone Gallery</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="app.css" />
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <!-- <body ng-controller="PhoneListController">
+
+    <ul>
+      <li ng-repeat="phone in phones">
+        <span>{{phone.name}}</span>
+        <p>{{phone.snippet}}</p>
+      </li>
+    </ul>
+
+  </body> -->
+<!-- ng-repeat="phone in phones"是一个AngularJS迭代器。这个迭代器告诉AngularJS用第一个li标签作为模板为列表中的每一部手机创建一个li元素。
+
+{{phone.name}}和{{phone.snippet}}是我们应用的一个数据模型引用，这些我们在PhoneListCtrl控制器里面都设置好了。 -->
+
+  <body ng-controller="PhoneListController">
+    <ul>
+      <li ng-repeat="phone in phones">
+         <span>{{phone.name}}</span>
+         <p>{{phone.snippet}}</p>
+      </li>
+    </ul>
+
+  </body>
+
+
+</html>
